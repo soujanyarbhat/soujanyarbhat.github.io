@@ -405,7 +405,7 @@ hr.light-100 {
     display: none;
   }
 
-  .display-4{
+  .display-4,h1{
     font-size: 240%;
   }
   .social a{
@@ -436,7 +436,7 @@ hr.light-100 {
     font-weight: 400;
     padding-bottom: 0.2rem;
   }
-  .display-4{
+  .display-4,h1{
     font-size: 190%;
   }
   .welcome hr{
@@ -459,7 +459,7 @@ hr.light-100 {
     font-weight: 400;
     padding-bottom: 0.2rem;
   }
-  .display-4{
+  .display-4, h1{
     font-size: 140%;
   }
 
