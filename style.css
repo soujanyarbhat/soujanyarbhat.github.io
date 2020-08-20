@@ -140,6 +140,10 @@ body {
     background-color: transparent;
 }
 
+.carousel-indicators .active {
+    background-color: transparent;
+}
+
 .carousel-indicators .social a {
     text-align: center;
     font-size: 2em;
