@@ -2,439 +2,413 @@
 <html lang="en">
 
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Soujanya R. Bhat</title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
-	<link href="style.css" rel="stylesheet">
-	<link rel="icon" type="image/png" href="img/logo.png">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Soujanya's Portfolio</title>
+    <link rel="icon" type="image/png" href="img/logo.png">
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <script src="main.js"></script>
+    <link href="style.css" rel="stylesheet">
+
 </head>
 
 <body>
-
-	<!-- <div class="headerContent"> -->
-	<!-- Navigation -->
-	<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
-		<div class="container-fluid">
-			<!-- style="padding-top: 0px; padding-bottom: 0px" -->
-			<a class="navbar-brand" href="#"><img src="img/logo.png" /></a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <!-- <a class="navbar-brand" href="#"></a> -->
+            <a class="navbar-brand" href="#"><img src="img/logo.png" /></a>
+            <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
-			<div class="collapse navbar-collapse" id="navbarResponsive">
-				<ul class="navbar-nav ml-auto">
-					<li class="nav-item">
-						<a class="nav-link active" href="#">Home</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#about_me">About Me</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#projects">Projects</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#experience">Education & Experience</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#skillSection">Skills</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#contact">Contact</a>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</nav>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item below active">
+                        <a class="nav-link below" href="#">Home
+							<span class="sr-only">(current)</span>
+						</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about_me">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experience">Timeline</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skillSection">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--- Image Slider -->
+    <header>
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <div class="carousel-indicators">
+                <div class="social">
+                    <a href="https://www.linkedin.com/in/soujanya-r-bhat/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/soujanyarbhat" target="_blank"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+            <div class="carousel-inner overlay" role="listbox">
+                <div class="carousel-item active" style="background-image: url('img/background1.png')"></div>
+                <div class="carousel-item" style="background-image: url('img/background2.png')"></div>
+                <div class="carousel-item" style="background-image: url('img/background3.png')"></div>
+                <div class="carousel-caption">
+                    <h5>Hello, Visitor!</h5>
+                    <h1 class="display-2">I'm Soujanya</h1>
+                    <p>| &nbsp; Student &nbsp; | &nbsp; Developer &nbsp; | </p>
+                    <br/>
+                    <a href="#about_me" title=""><button type="button" class="btn btn-outline-secondary btn-lg">More About Me</button></a>
+                </div>
+            </div>
 
-	<!--- Image Slider -->
-	<div id="slides" class="carousel slide carousel-fade" data-ride="carousel">
-		<ol class="carousel-indicators">
-			<li data-target="#slides" data-slide-to="0" class="active"></li>
-			<li data-target="#slides" data-slide-to="1"></li>
-			<li data-target="#slides" data-slide-to="2"></li>
-		</ol>
-		<div class="carousel-inner">
-			<div class="carousel-item active">
-				<img src="img/background1.png" />
-			</div>
-			<div class="carousel-item">
-				<img src="img/background2.png" />
-			</div>
-			<div class="carousel-item">
-				<img src="img/background3.png" />
-			</div>
-			<div class="carousel-caption">
-				<h1 class="display-2">Soujanya R Bhat</h1>
-				<h3>Forever a student</h3>
-			</div>
-		</div>
-	</div>
-	<!-- </div> -->
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </header>
+    <div class="content">
+        <hr id="about_me" class="my-4 padding">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 welcome text-center">
+                    <h1 class="display-4">About Me</h1>
+                    <hr>
+                </div>
 
-	<!--- Jumbotron -->
+                <div class="col-md-12 col-lg-6 welcome">
+                    <p>My name is Soujanya Ranganatha Bhat (TL;DR Soujanya :P) and I am a graduate student studying Computer Science at Arizona State University.</p>
+                    <p>I have always been fascinated by the idea of problems. I could never explain the joy I derived in solving them. I love any kind of challenge, whether it's finding the best algorithm to solve a problem or figuring out a tough puzzle.
+                        I love the satisfaction that comes from <i>finding a way</i>.</p>
+                    <p>Wondering if I might be a good fit for your company? Check out my <a href="https://www.linkedin.com/in/soujanya-r-bhat/" target="_blank">LinkedIn profile!</a>
+                    </p>
+                    <br>
+                    <a href="https://drive.google.com/file/d/1Nce5sWBs8gD_xWaKtk1teloEPWUGSSpe/view?usp=sharing" target="_blank"><button type="button"
+							class="btn btn-primary btn-lg">Resume</button></a>
 
-	<div class="container-fluid">
-		<div class="row jumbotron">
-			<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-10">
-				<p class="lead">Hello! My name is Soujanya and I am a graduate student studying Computer Science at
-					Arizona State University. Welcome to my profile :D </p>
-			</div>
-			<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-2">
-				<a href="img/Resume_Soujanya_Bhat.pdf" target="_blank"><button
-						type="button" class="btn btn-outline-secondary btn-lg">Resume</button></a>
-			</div>
-		</div>
-	</div>
+                </div>
+                <div class="col-lg-6">
+                    <img src="img/AboutMe.jpg" class="img-fluid">
+                </div>
+            </div>
 
-	<!--Actual Content-->
-	<div class="content">
+            <!--- INTERESTS -->
+            <a data-toggle="collapse" href="#interests" role="button" aria-expanded="false" aria-controls="interests" class="btn btn-outline-secondary btn-lg btn-block py-2 shadow-sm with-chevron">
+                <p class="d-flex align-items-center justify-content-between mb-0 px-3 py-2">More..<i class="fa fa-angle-up"></i></p>
+            </a>
+            <div id="interests" class="collapse shadow-sm">
+                <hr class="my-4 padding">
+                <div class="container-fluid">
+                    <div class="row text-center">
+                        <div class="col-12 welcome">
+                            <h1>Bharatanatyam</h1>
+                            <hr>
+                        </div>
+                        <!----About Dance---->
+                        <div class="col-md-12 col-lg-6">
 
-		<!--- ABOUT ME -->
-		<div id="about_me" class="container-fluid padding">
-			<div class="row">
-				<div class="col-12 welcome text-center">
-					<h1 class="display-4">About Me</h1>
-					<hr>
-				</div>
+                            <p class="align-middle">
+                                As a person who shared an equal interest in creativity and technology, I always wanted to explore different avenues in life. I was drawn to dance at a young age. I started my formal training at the age of 7 and I have continued to learn and perform the
+                                classical dance form for the past 18 years. It has carried with it a lot of traditional and disciplinary values into my life and I feel blessed to be practicing this beautiful art form.
+                            </p>
+                            <a href="https://youtu.be/oX9dEBwn5yg?t=14" target="_blank"><i
+									class="fab fa-youtube"></i></a>
 
-				<div class="col-md-12 col-lg-6">
-					<!-- <h2>About Me</h2> -->
-					<p>My name is Soujanya Ranganatha Bhat (TL;DR Soujanya :P) and I am a graduate student studying
-						Computer Science at Arizona State University.</p>
-					<p>I have always been fascinated by the idea of problems. I could never explain the joy I derived in solving them.
-						I love any kind of challenge, whether it's finding the best algorithm to solve a problem or
-						figuring out a tough puzzle. I love the satisfaction that comes from <i>finding a way</i></p>
-					<p>Wondering if I might be a good fit for your company? Check out my <a href="https://www.linkedin.com/in/soujanya-r-bhat/" target="_blank">LinkedIn profile!</a></p>
-					<br>
-					<!-- <a href="#" class="btn btn-primary">Learn More</a> -->
-				</div>
-				<div class="col-lg-6">
-					<img src="img/AboutMe.jpg" class="img-fluid">
-				</div>
-			</div>
-		</div>
-
-		<!--- INTERESTS -->
-		<a data-toggle="collapse" href="#interests" role="button" aria-expanded="false" aria-controls="interests"
-			class="btn btn-outline-secondary btn-lg btn-block py-2 shadow-sm with-chevron">
-			<p class="d-flex align-items-center justify-content-between mb-0 px-3 py-2">More..<i class="fa fa-angle-up"></i></p>
-		</a>
-		<div id="interests" style="width: 60%; margin-left: auto; margin-right: auto;" class="collapse shadow-sm">
-			<div class="container-fluid">
-				<div class="row text-center">
-					<div class="col-12 welcome">
-						<h1>Bharatanatyam</h1>
-						<hr>
-					</div>
-					<!----About Dance---->
-					<div class="col-md-12 col-lg-6">
-						
-							<p class="align-middle"> 
-								As a person who shared an equal interest in creativity and technology,  I always wanted to explore different avenues in life. 
-								I was drawn to dance at a young age. I started my formal training at the age of 7 and I
-								have continued to learn and perform the classical dance form for the past 18 years. 
-								It has carried with it a lot of traditional and disciplinary values into my life and I feel blessed to be practicing this beautiful art form.
-							</p>
-							<a href="https://youtu.be/oX9dEBwn5yg?t=14" target="_blank"
-								style="text-align:center; font-size: 4em;"><i class="fab fa-youtube"></i></a>
-						
-					</div>
-					<div class="col-lg-6">
-						<img src="img/dance.jpg" class="img-fluid">
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<hr class="my-4">
-
-		<!--- PROJECTS -->
-		<div id="projects" class="container-fluid padding">
-			<div class="row padding">
-				<div class="col-12 welcome text-center">
-					<h1 class="display-4">Projects</h1>
-				</div>
+                        </div>
+                        <div class="col-lg-6">
+                            <img src="img/dance.jpg" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
-				<div class="col-md-4">
-					<div class="card h-100">
-						<img class="card-img-top" src="img/ProjectNLP.png">
-						<div class="card-body d-flex flex-column">
-							<h4 class="card-title"><b> aNswER </b>for MultiRC dataset</h4>
-							<p class="card-text">aNswER is a Named Entity Recognition based approach for MultiRC, a
-								multi-hop multi-choice question answering dataset.</p>
-							<a href="https://soujanyarbhat.github.io/aNswER_multirc/" target="_blank"
-								class="btn btn-outline-secondary mt-auto" target="_blank">Github</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="card h-100">
-						<img class="card-img-top" src="img/DMProject.png">
-						<div class="card-body d-flex flex-column">
-							<h4 class="card-title">Meal intake Prediction System</h4>
-							<p class="card-text">Model to predict meal intake of a diabetic patient using CGM
-								time-series data based on extracted features</p>
-							<a href="https://soujanyarbhat.github.io/meal_classification/" target="_blank"
-								class="btn btn-outline-secondary mt-auto">Github</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="card h-100">
-						<img class="card-img-top" src="img/DPSProject.png">
-						<div class="card-body d-flex flex-column">
-							<h4 class="card-title">Geospatial Hotspot Analysis</h4>
-							<p class="card-text">Identified statistically significant spatial hotspots on ”NYC Yellow
-								Cab taxi trip” BigData set using Apache Spark</p>
-							<a href="https://soujanyarbhat.github.io/DPS_Phase2/" target="_blank"
-								class="btn btn-outline-secondary mt-auto">Github</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+        <hr id="projects" class="my-4 padding">
 
-		<hr class="my-4">
-
-		<!---EXPERIENCE----->
-		<div id="experience" class="container-fluid padding">
-			<div class="row text-center">
-				<div class="col-12 welcome">
-					<h1 class="display-4">Education & Experience</h1>
-					<hr>
-				</div>
-			</div>
-		</div>
+        <!--- PROJECTS -->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 welcome text-center">
+                    <h1 class="display-4">Projects</h1>
+                </div>
 
 
-		<div class="timeline">
-			<div class="entry">
-				<div class="title">
-					<div>
-						<img src="img/ASU.jpg" />
-					</div>
-					<h3>August 2019 - Present</h3>
-					<p>Arizona State University</p>
-				</div>
-				<div class="body">
-					<p>Master of Science in Computer Science
-					</p>
-					<ul>
-						<!-- <li>Rerum sit libero possimus amet excepturi</li>
-						<li>Exercitationem enim dolores sunt praesentium dolorum praesentium</li>
-						<li>Modi aut dolores dignissimos sequi sit ut aliquid molestias deserunt illo</li> -->
-					</ul>
-				</div>
-			</div>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img class="card-img-top" src="img/ProjectNLP.png">
+                        <div class="card-body d-flex flex-column">
+                            <h4 class="card-title"><b> aNswER </b>for MultiRC dataset</h4>
+                            <p class="card-text">aNswER is a Named Entity Recognition based approach for MultiRC, a multi-hop multi-choice question answering dataset.</p>
+                            <a href="https://soujanyarbhat.github.io/aNswER_multirc/" target="_blank" class="btn btn-primary mt-auto">Github</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img class="card-img-top" src="img/DMProject.png">
+                        <div class="card-body d-flex flex-column">
+                            <h4 class="card-title">Meal intake Prediction System</h4>
+                            <p class="card-text">Model to predict meal intake of a diabetic patient using CGM time-series data based on extracted features</p>
+                            <a href="https://soujanyarbhat.github.io/meal_classification/" target="_blank" class="btn btn-primary mt-auto">Github</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img class="card-img-top" src="img/DPSProject.png">
+                        <div class="card-body d-flex flex-column">
+                            <h4 class="card-title">Geospatial Hotspot Analysis</h4>
+                            <p class="card-text">Identified statistically significant spatial hotspots on ”NYC Yellow Cab taxi trip” BigData set using Apache Spark</p>
+                            <a href="https://soujanyarbhat.github.io/DPS_Phase2/" target="_blank" class="btn btn-primary mt-auto">Github</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-			<div class="entry">
-				<div class="title">
-					<div>
-						<img src="img/Aurigo.png" />
-					</div>
-					<h3>June 2017 - May 2019</h3>
-					<p>Aurigo Software</p>
-				</div>
-				<div class="body">
-					<p>Software Developer</p>
-					<ul>
-						<li>Adapted MVC Architecture for full-stack development of a dashboard to present automated performance results using ASP.NET and Microsoft SQL Server</li>
-						<li>Developed an automation framework for the products Mobile App using C# and Appium</li>
-						<li>Trained a team of 30 in-house employees at Aurigo Software Technologies on performance testing and conducted a hands-on workshop</li>
-						<li>Received a Performance Excellence award, nominated by company peers</li>
-					</ul>
-				</div>
-			</div>
-			
-			<div class="entry">
-				<div class="title">
-					<div>
-						<img src="img/Aurigo.png" />
-					</div>
-					<h3>Feb 2017 - May 2017</h3>
-					<p>Aurigo Software</p>
-				</div>
-				<div class="body">
-					<p>Software Developer Intern</p>
-					<ul>
-						<li>Re-designed the automation framework to adopt Reflections which aided in dynamically creating an instance of a type and binding that type to an existing test object</li>
-						<li>Extended the automation framework to support API testing using RestSharp</li>
-					</ul>
-				</div>
-			</div>
+        <hr id="experience" class="my-4 padding">
 
-			<div class="entry">
-				<div class="title">
-					<div>
-						<img src="img/RNSI.jpeg" />
-					</div>
-					<h3>August 2013 - June 2017</h3>
-					<p>Vishveswaraya Technologcal University</p>
-					<p>RNS Institute Of Technology</p>
-				</div>
-				<div class="body">
-					<p>Bachelor of Engineering in Computer Science</p>
-					<ul>
-						<!-- <li>Rerum sit libero possimus amet excepturi</li>
-						<li>Exercitationem enim dolores sunt praesentium dolorum praesentium</li>
-						<li>Modi aut dolores dignissimos sequi sit ut aliquid molestias deserunt illo</li> -->
-					</ul>
-				</div>
-			</div>
-			
-			<div class="entry">
-				<div class="title">
-					<div>
-						<img src="img/college.jpeg" />
-					</div>
-					<h3>2011 - 2013</h3>
-					<p>Deeksha Centre for Learning</p>
-				</div>
-				<div class="body">
-					<p>College
-					</p>
-				</div>
-			</div>
-			
-			<div class="entry">
-				<div class="title">
-					<div>
-						<img src="img/school.png" />
-					</div>
-					<h3>1999 - 2011</h3>
-					<p>Jyothi Kendriya Vidyalaya</p>
-				</div>
-				<div class="body">
-					<p>Schooling</p>
-				</div>
-			</div>
-		</div>
-
-		<hr class="my-4">
-
-		<!---Skills----->
-		<div id="skillSection" class="container-fluid padding">
-			<div class="row text-center">
-				<div class="col-12 welcome">
-					<h1 class="display-4">Skills</h1>
-					<hr>
-				</div>
-				<div id="skills">
-					<ul>
-						<li>Python</li>
-						<li>Java</li>
-						<li>C#</li>
-						<li>Scala</li>
-						<li>SQL</li>
-						<li>HTML</li>
-						<li>CSS</li>
-						<li>Spark</li>
-						<li>PostgreSQL</li>
-						<li>ASP.NET MVC</li>
-						<li>Rest API</li>
-						<li>AWS</li>
-						<li>Git</li>
-						<li>VSTS</li>
-						<li>pandas</li>
-						<li>NumPy</li>
-						<li>Scikit-Learn</li>
-						<li>PyTorch</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-
-		<hr class="my-4">
-
-		<!---EDUCATION----->
-		<!-- <div class="container-fluid padding">
-		<div class="row welcome text-center">
-			<div class="col-12">
-				<h1 class="display-4">Education</h1>
-				<hr>
-			</div>
-			
-		</div>
-	</div> -->
-		<!--- Check out my courses! -->
-		<!-- <div class="container-fluid padding">
-		<div class="row padding">
-			<div class="col-md-12 col-lg-6">
-				<h2>Check out my courses</h2>
-				<p>Some text that I want</p>
-				<p>Para2. Some text that I want</p>
-				<p>Para3. Some text that I want</p>
-			</div>
-			<div class="col-lg-6">
-				<img src="img/bootstrap2.png" class="img-fluid">
-			</div>
-		</div>
-	</div> -->
-
-		<!---EMAIL ME-->
-		<div id="contact" class="container-fluid padding">
-			<div class="row text-center">
-				<div class="col-12 welcome">
-					<h3 class="display-4">Contact Me</h3>
-					<hr>
-					<p>If you’d like to get in touch with me, you can contact me using the form below or my e-mail
-						address: <a href="mailto:sranga16@asu.edu" target="_blank">sranga16@asu.edu</a>.</p>
-
-					<form action="https://formspree.io/meqrakbp" method="POST">
-						<div class="form-group">
-							<label>Name</label>
-							<input class="form-control" placeholder="your name" name="_from">
-						</div>
-						<div class="form-group">
-							<label>Email</label>
-							<input type="email" class="form-control" aria-describedby="emailHelp"
-								placeholder="your email" name="_replyto">
-						</div>
-						<div class="form-group">
-							<label>Message</label>
-							<textarea class="form-control" placeholder="your message" name="message"></textarea>
-						</div>
+        <!---EXPERIENCE----->
+        <div class="container-fluid">
+            <div class="row text-center">
+                <div class="col-12 welcome">
+                    <h1 class="display-4">Education & Experience</h1>
+                    <hr>
+                </div>
+            </div>
 
 
-						<!-- <div class="form-group"> -->
-						<button type="submit" class="btn btn-primary">Send</button>
-						<!-- </div> -->
-					</form>
-				</div>
-			</div>
-		</div>
 
-	</div>
+            <div class="timeline">
+                <div class="entry">
+                    <div class="title">
+                        <div>
+                            <img src="img/ASU.jpg" />
+                        </div>
+                        <h3>Cognition and Intelligence Lab (ASU)</h3>
+                        <p>May 2020 - Present</p>
+                    </div>
+                    <div class="body">
+                        <p>Graduate Research Assistant
+                        </p>
+                        <ul>
+                            <li>Research and development focusing on neuro-symbolic reasoning for natural language processing
+                            </li>
+                            <li>Developed a neuro-symbolic parser to handle Question-Answer driven Semantic Role Labeling
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="entry">
+                    <div class="title">
+                        <div>
+                            <img src="img/ASU.jpg" />
+                        </div>
+                        <h3>Arizona State University</h3>
+                        <p>August 2019 - Present</p>
+                    </div>
+                    <div class="body">
+                        <p>Master of Science in Computer Science
+                        </p>
+                        <ul>
+                        </ul>
+                    </div>
+                </div>
 
-	<!--- FOOTER -->
-	<footer>
-		<!-- CONNECT -->
-		<div class="container-fluid">
-			<div class="row text-center">
-				<div class="col-12">
-					<h3>Connect</h3>
-				</div>
-				<div class="col-12 social padding">
-					<a href="https://www.linkedin.com/in/soujanya-r-bhat/" target="_blank"><i
+                <div class="entry">
+                    <div class="title">
+                        <div>
+                            <img src="img/Aurigo.png" />
+                        </div>
+                        <h3>Aurigo Software</h3>
+                        <p>June 2017 - May 2019</p>
+                    </div>
+                    <div class="body">
+                        <p>Software Developer</p>
+                        <ul>
+                            <li>Adapted MVC Architecture for full-stack development of a dashboard to present performance results using ASP.NET and Microsoft SQL Server</li>
+                            <li>Developed a framework for the products Mobile App using C# and Appium</li>
+                            <li>Trained a team of 30 in-house employees at Aurigo Software Technologies on performance testing and conducted a hands-on workshop</li>
+                            <li>Received a Performance Excellence award, nominated by company peers</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="entry">
+                    <div class="title">
+                        <div>
+                            <img src="img/Aurigo.png" />
+                        </div>
+                        <h3>Aurigo Software</h3>
+                        <p>Feb 2017 - May 2017</p>
+                    </div>
+                    <div class="body">
+                        <p>Software Developer Intern</p>
+                        <ul>
+                            <li>Extended the automation framework to support API testing using RestSharp</li>
+                            <li>Re-designed the automation framework to adopt Reflections</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="entry">
+                    <div class="title">
+                        <div>
+                            <img src="img/RNSI.jpeg" />
+                        </div>
+                        <h3>Vishveswaraya Technologcal University</h3>
+                        <h3>RNS Institute Of Technology</h3>
+                        <p>August 2013 - June 2017</p>
+                    </div>
+                    <div class="body">
+                        <p>Bachelor of Engineering in Computer Science</p>
+                        <ul>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="entry">
+                    <div class="title">
+                        <div>
+                            <img src="img/college.jpeg" />
+                        </div>
+                        <h3>Deeksha Centre for Learning</h3>
+                        <p>2011 - 2013</p>
+                    </div>
+                    <div class="body">
+                        <p>College
+                        </p>
+                    </div>
+                </div>
+
+                <div class="entry">
+                    <div class="title">
+                        <div>
+                            <img src="img/school.png" />
+                        </div>
+                        <h3>Jyothi Kendriya Vidyalaya</h3>
+                        <p>1999 - 2011</p>
+                    </div>
+                    <div class="body">
+                        <p>Schooling</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr id="skillSection" class="my-4 padding">
+
+        <!---Skills----->
+        <div class="container-fluid">
+            <div class="row text-center">
+                <div class="col-12 welcome">
+                    <h1 class="display-4">Skills</h1>
+                    <hr>
+                </div>
+                <div id="skills">
+                    <ul>
+                        <li>Python</li>
+                        <li>Java</li>
+                        <li>C#</li>
+                        <li>Scala</li>
+                        <li>SQL</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Spark</li>
+                        <li>PostgreSQL</li>
+                        <li>ASP.NET MVC</li>
+                        <li>Rest API</li>
+                        <li>AWS</li>
+                        <li>Git</li>
+                        <li>VSTS</li>
+                        <li>pandas</li>
+                        <li>NumPy</li>
+                        <li>Scikit-Learn</li>
+                        <li>PyTorch</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <hr id="contact" class="my-4 padding">
+
+        <!---EMAIL ME-->
+        <div class="container-fluid">
+            <div class="row text-center">
+                <div class="col-12 welcome">
+                    <h1 class="display-4">Contact Me</h1>
+                    <hr>
+                    <p>If you’d like to get in touch with me, you can contact me using the form below or my e-mail address: <a href="mailto:sranga16@asu.edu" target="_blank">sranga16@asu.edu</a>.</p>
+
+                    <form action="https://formspree.io/meqrakbp" method="POST">
+                        <div class="form-group">
+                            <label>Name</label>
+                            <input class="form-control" placeholder="your name" name="_from">
+                        </div>
+                        <div class="form-group">
+                            <label>Email</label>
+                            <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="your email" name="_replyto">
+                        </div>
+                        <div class="form-group">
+                            <label>Message</label>
+                            <textarea class="form-control" placeholder="your message" name="message"></textarea>
+                        </div>
+
+
+                        <!-- <div class="form-group"> -->
+                        <button type="submit" class="btn btn-primary">Send</button>
+                        <!-- </div> -->
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- </div> -->
+
+    <!--- FOOTER -->
+    <footer>
+        <!-- CONNECT -->
+        <div class="container-fluid">
+            <div class="row text-center">
+                <div class="col-12">
+                    <h3>Connect</h3>
+                </div>
+                <div class="col-12 social padding">
+                    <a href="https://www.linkedin.com/in/soujanya-r-bhat/" target="_blank"><i
 							class="fab fa-linkedin"></i></a>
-					<a href="https://github.com/soujanyarbhat" target="_blank"><i class="fab fa-github"></i></a>
-					<a href="https://www.facebook.com/soujanya.rbhat" target="_blank"><i
+                    <a href="https://github.com/soujanyarbhat" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.facebook.com/soujanya.rbhat" target="_blank"><i
 							class="fab fa-facebook"></i></a>
-					<a href="https://www.instagram.com/soujanya_r_bhat" target="_blank"><i
+                    <a href="https://www.instagram.com/soujanya_r_bhat" target="_blank"><i
 							class="fab fa-instagram"></i></a>
-				</div>
-				<div class="col-12">
-					<hr class="light-100">
-					<h6>&copy; 2020 Soujanya R Bhat</h6>
-				</div>
-			</div>
-		</div>
-	</footer>
+                </div>
+                <div class="col-12">
+                    <hr class="light-100">
+                    <h6>&copy; 2020 Soujanya R Bhat</h6>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 </body>
 
