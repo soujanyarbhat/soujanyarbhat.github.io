@@ -150,12 +150,18 @@ body {
     padding: 1rem;
 }
 
-.carousel-indicators .fa-linkedin:hover {
+.carousel-indicators .fa-file:hover,
+.carousel-indicators .fa-github:hover,
+.carousel-indicators .fa-linkedin:hover,
+.carousel-indicators .fa-envelope:hover {
     color: #F2AF29;
 }
 
-.carousel-indicators .fa-github:hover {
-    color: #F2AF29;
+.carousel-indicators .fa-file,
+.carousel-indicators .fa-github,
+.carousel-indicators .fa-linkedin,
+.carousel-indicators .fa-envelope {
+    color: #ebebeb;
 }
 
 
@@ -508,6 +514,9 @@ hr.light-100 {
     .welcome hr {
         margin-top: 2rem;
     }
+    .entry .body ul {
+        display: none;
+    }
 }
 
 @media (max-width: 608px) {
@@ -569,6 +578,10 @@ hr.light-100 {
 @media (max-width: 458px) {
     .carousel-caption {
         top: 50%;
+    }
+    .carousel-indicators .social a {
+        font-size: 1.2em;
+        padding: 0.5rem;
     }
     .carousel-caption h1 {
         font-size: 150%;
